@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {VideoContainer} from "../VideoContainer/VideoContainer";
-
+import "./ResultTable.css";
 /*
 This component is the left side panel that contains
 filtrs to filter the job results

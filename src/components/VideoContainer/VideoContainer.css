@@ -3,7 +3,7 @@
     height: 300px;
     border: 1px darkgrey;
     margin: 10px;
-
+    position: relative;
 }
 
 .video-container img {
