@@ -1,0 +1,16 @@
+.likebar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.likediv {
+    background-color: green;
+    float:left
+}
+
+.dislikediv {
+    background-color: red;
+    float: right;
+
+}

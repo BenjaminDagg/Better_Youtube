@@ -1,8 +1,9 @@
 .video-container {
     width: 250px;
-    height: 250px;
+    height: 300px;
     border: 1px darkgrey;
     margin: 10px;
+
 }
 
 .video-container img {
