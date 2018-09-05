@@ -18,11 +18,15 @@ export class VideoTable extends Component {
         this.state = {
           gapiLoaded: false,
           searchText: "",
-          videos: []
+          videos: [],
+          searchHistory: []
         };
 
         this.getVideos = this.getVideos.bind(this);
         this.onSearchChanged = this.onSearchChanged.bind(this);
+        this.setCookie = this.setCookie.bind(this);
+        this.getCookie = this.getCookie.bind(this);
+        this.getRelated = this.getRelated.bind(this);
 
     }
 
@@ -31,6 +35,32 @@ export class VideoTable extends Component {
     componentDidMount() {
         //load youtube js client library
         window.gapi.load("client", this.initAPI);
+
+
+
+    }
+
+
+
+    getRelated() {
+        if (!this.state.gapiLoaded || this.state.videos.length > 0) {
+            return;
+        }
+
+        //update cookie with new search
+        var history = this.getCookie("searches");
+        //cookie alkready exists
+        if (history != "") {
+            console.log(history);
+            history = JSON.parse(history);
+            this.setState({searchHistory: history});
+            var randomIndex = Math.floor(Math.random() * Math.floor(history.length));
+            this.setState({searchText: history[randomIndex]}, () => {
+                this.getVideos();
+            });
+
+        }
+
     }
 
 
@@ -46,7 +76,9 @@ export class VideoTable extends Component {
 
 
                     //update child components that api is laoded
-                    this.setState({gapiLoaded: true});
+                    this.setState({gapiLoaded: true}, () => {
+                        this.getRelated();
+                    });
                 })
             })
     }
@@ -63,12 +95,21 @@ export class VideoTable extends Component {
 
         this.setState({searchText: text}, () => {
             this.getVideos();
+
+            //add search to search history
+            var searchHistory = this.state.searchHistory;
+            searchHistory.push(text);
+            this.setState({searchHistory: searchHistory});
+            var json_val = JSON.stringify(searchHistory);
+            this.setCookie("searches",json_val);
         });
 
     }
 
 
     getVideos() {
+
+        console.log("search text: " + this.state.searchText);
 
         //delete all videos
         this.setState({videos: []});
@@ -110,26 +151,30 @@ export class VideoTable extends Component {
 
         });
 
+    }
 
 
 
-        /*
-        axios.get('https://www.googleapis.com/youtube/v3/videos', {
-            params: {
-                part: 'contentDetails',
-                type: 'video',
-                key: config.apiKey,
-                q: this.state.searchText
+    setCookie(name,val) {
+
+
+        document.cookie = name + "=" + val + '; path=/';
+    }
+
+
+    getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
             }
-        })
-            .then(response => {
-                console.log(response);
-            });
-        */
-
-
-
-
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
     }
 
 
