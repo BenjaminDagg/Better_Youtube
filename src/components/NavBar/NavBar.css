@@ -1,0 +1,14 @@
+.normal-link {
+    text-decoration: none;
+
+}
+
+#logo {
+    color: dodgerblue;
+    font-size: 40px;
+    font-family: Monospaced;
+}
+
+#nav-bar {
+    margin: 10px;
+}
