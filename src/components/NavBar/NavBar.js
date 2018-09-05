@@ -10,7 +10,7 @@ export class NavBar extends Component {
         return (
             <div id="nav-bar">
                 <a class="normal-link" href="/">
-                    <span id="logo">Job Board</span>
+                    <span id="logo">Better YouTube</span>
                 </a>
             </div>
         );

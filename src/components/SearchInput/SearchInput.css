@@ -1,10 +1,18 @@
 .job-search-container {
     width:220px;
     height: 80px;
-    position: relative;
-    float: left;
+    position: absolute;
 
 
+
+}
+
+#job-input {
+    left: 0;
+}
+
+#loc-input {
+    left: 220px;
 }
 
 .search-input-top-text {
@@ -45,7 +53,8 @@
     background-color: dodgerblue;
     color:white;
     border: 1px transparent;
-    border-radius: 6px;
-    flaot: left;
-    margin-top: 22px;
+    border-radius: 20px;
+    position: absolute;
+    top: 22px;
+    left: 220px;
 }
