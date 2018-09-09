@@ -5,7 +5,7 @@ import { ResultList } from "../ResultBar/ResultList";
 import { config } from "../../models/config";
 import {VideoContainer} from "../VideoContainer/VideoContainer";
 import axios from "axios";
-
+import { CookiesProvider, withCookies, Cookies } from 'react-cookie';
 
 /*
 This component is the container for the entire application
