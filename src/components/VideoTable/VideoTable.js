@@ -33,8 +33,24 @@ export class VideoTable extends Component {
 
 
     componentDidMount() {
+        /*
         //load youtube js client library
         window.gapi.load("client", this.initAPI);
+        */
+
+        //load youtube js client library
+        let self = this;
+
+        //insert script tag into document
+        let scriptTag = document.createElement("script");
+        scriptTag.type = "text/javascript";
+        scriptTag.src = "https://apis.google.com/js/platform.js";
+        //initilze api when the script is ready
+        scriptTag.addEventListener("load", () => {
+            window.gapi.load("client", self.initAPI);
+        });
+        //add script to page
+        document.head.appendChild(scriptTag);
 
 
 
