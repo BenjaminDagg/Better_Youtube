@@ -30,8 +30,8 @@ export class ResultList extends Component {
         else {
             var videos = this.props.videos.map((video) => {
                 console.log(video);
-                var url = "https://www.youtube.com/embed/";
-                return <VideoContainer video={video} thumbnail={video.snippet.thumbnails.high.url}/>
+
+                return <VideoContainer  onClick={this.props.onVideoClicked} video={video} thumbnail={video.snippet.thumbnails.high.url}/>
             })
 
             return videos;
@@ -42,8 +42,10 @@ export class ResultList extends Component {
 
         var videos = this.videoList();
 
+
+
         return (
-            <div id="result-bar">
+            <div style={this.props.style} id="result-bar">
                 {videos}
             </div>
         );

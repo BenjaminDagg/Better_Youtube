@@ -26,3 +26,7 @@
 .video-container span {
     color: grey;
 }
+
+.video-container a {
+    text-decoration: none;
+}

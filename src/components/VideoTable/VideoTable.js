@@ -6,6 +6,8 @@ import { config } from "../../models/config";
 import {VideoContainer} from "../VideoContainer/VideoContainer";
 import axios from "axios";
 import { CookiesProvider, withCookies, Cookies } from 'react-cookie';
+import { VideoSide } from "../VideoSide/VideoSide";
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 
 /*
 This component is the container for the entire application
@@ -19,7 +21,9 @@ export class VideoTable extends Component {
           gapiLoaded: false,
           searchText: "",
           videos: [],
-          searchHistory: []
+          searchHistory: [],
+          selectedVideo: null,
+          videoPlaying: false
         };
 
         this.getVideos = this.getVideos.bind(this);
@@ -27,7 +31,8 @@ export class VideoTable extends Component {
         this.setCookie = this.setCookie.bind(this);
         this.getCookie = this.getCookie.bind(this);
         this.getRelated = this.getRelated.bind(this);
-
+        this.onVideoClicked = this.onVideoClicked.bind(this);
+        this.onVideoPlayerClose = this.onVideoPlayerClose.bind(this);
     }
 
 
@@ -123,6 +128,10 @@ export class VideoTable extends Component {
     }
 
 
+
+
+
+
     getVideos() {
 
         console.log("search text: " + this.state.searchText);
@@ -195,16 +204,65 @@ export class VideoTable extends Component {
 
 
 
+    //callback from VideoContainer that sets the id of the clicked video
+    onVideoClicked(id) {
+        this.setState({videoPlaying: true});
+        this.setState({selectedVideo: id});
+    }
+
+
+    onVideoPlayerClose() {
+        this.setState({videoPlaying: false});
+        this.setState({slectedVideo: null})
+    }
+
+
     render() {
+
+
+        var listStyle;
+        var videoStyle;
+        if (this.state.videoPlaying) {
+            listStyle = {
+                'width' : '50%',
+
+            };
+            videoStyle = {
+                'width' : '50%',
+                'visibility' : 'visible'
+            };
+        }
+        else {
+            listStyle = {
+                'width':'100%'
+            };
+
+            videoStyle = {
+                'display' : 'none',
+
+            };
+        }
+
         return (
             <div id="job-board">
                 <script src="https://apis.google.com/js/client.js?onload=initAPI"></script>
+              <Router>
+                <div>
                 {this.state.gapiLoaded &&
-                    <ResultList videos={this.state.videos}/>
+                    <ResultList style={listStyle} onVideoClicked={this.onVideoClicked} videos={this.state.videos}/>
                 }
                 {this.state.gapiLoaded &&
                 <SearchInput onSearchChanged={this.onSearchChanged}/>
                 }
+
+                {this.state.videos.length != 0 && this.state.gapiLoaded && this.state.videoPlaying &&
+
+                    <Route path={"/video/:id"} render={(props) => <VideoSide  {...props} style={videoStyle} onVideoPlayerClose={this.onVideoPlayerClose} videos={this.state.videos} selectedVideo={this.state.selectedVideo}/>} />
+
+                }
+                </div>
+              </Router>
+
             </div>
         );
     }

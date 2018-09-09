@@ -1,0 +1,15 @@
+#video-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    margin-left: 10px;
+    background-color: dodgerblue;
+    color: white;
+    border: 1px dodgerblue;
+    border-radius: 3px;
+    cursor: pointer;
+
+}

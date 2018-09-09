@@ -3,6 +3,7 @@ import "./VideoContainer.css";
 import { config } from "../../models/config";
 import axios from "axios";
 import { LikeBar } from "../LikeBar/LikeBar";
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 
 /*
 This component is the 'Job Board' logo on the top of
@@ -19,7 +20,7 @@ export class VideoContainer extends Component {
         };
 
         this.parseNumbers = this.parseNumbers.bind(this);
-
+        this.onClick = this.onClick.bind(this);
 
     }
 
@@ -79,13 +80,19 @@ export class VideoContainer extends Component {
 
 
 
+    onClick() {
+        console.log("clicked");
+        this.props.onClick(this.props.video.id);
+    }
+
+
 
     //<iframe src={this.props.url} className="player" id={this.props.video.id.videoId} type="text/html" width="200" height="200"/>
 
     render() {
         return (
             <div class="video-container">
-                <a >
+                <Link to={"/video/" + this.props.video.id} onClick={this.onClick} >
                     <img src={this.props.thumbnail} />
                     <p>
                         <strong>
@@ -104,7 +111,7 @@ export class VideoContainer extends Component {
                             <LikeBar likes={this.props.video.statistics.likeCount} dislikes={this.parseNumbers(this.props.video.statistics.dislikeCount)}/>
                         </div>
                     </p>
-                </a>
+                </Link>
             </div>
         );
     }
