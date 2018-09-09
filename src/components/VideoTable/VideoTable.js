@@ -182,7 +182,7 @@ export class VideoTable extends Component {
     render() {
         return (
             <div id="job-board">
-
+                <script src="https://apis.google.com/js/client.js?onload=initAPI"></script>
                 {this.state.gapiLoaded &&
                     <ResultList videos={this.state.videos}/>
                 }
