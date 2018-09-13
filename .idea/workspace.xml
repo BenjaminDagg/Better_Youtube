@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6d50e670-54b5-49b7-bd29-17b5baa1d98c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoSide/VideoSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoSide/VideoSide.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/VideoTable/VideoTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoTable/VideoTable.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -46,25 +45,25 @@
         <counts>
           <entry key="css" value="3109" />
           <entry key="html" value="49" />
-          <entry key="js" value="17344" />
+          <entry key="js" value="17382" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="3109" />
           <entry key="HTML" value="49" />
-          <entry key="JavaScript" value="17344" />
+          <entry key="JavaScript" value="17382" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/VideoTable/VideoTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="258" column="17" selection-start-line="258" selection-start-column="17" selection-end-line="258" selection-end-column="17" />
+            <state relative-caret-position="353">
+              <caret line="151" column="25" selection-start-line="151" selection-start-column="25" selection-end-line="151" selection-end-column="25" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -84,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/VideoSide/VideoSide.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="969">
               <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -214,8 +213,8 @@
         <option value="$PROJECT_DIR$/src/components/VideoPlayer/VideoPlayer.css" />
         <option value="$PROJECT_DIR$/src/components/ResultBar/ResultList.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSide/VideoSide.css" />
-        <option value="$PROJECT_DIR$/src/components/VideoTable/VideoTable.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSide/VideoSide.js" />
+        <option value="$PROJECT_DIR$/src/components/VideoTable/VideoTable.js" />
       </list>
     </option>
   </component>
@@ -388,12 +387,12 @@
       <workItem from="1536268869764" duration="44000" />
       <workItem from="1536476409792" duration="14243000" />
       <workItem from="1536551840499" duration="11000" />
-      <workItem from="1536881222311" duration="436000" />
+      <workItem from="1536881222311" duration="718000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48498000" />
+    <option name="totallyTimeSpent" value="48780000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="968" y="0" width="959" height="1047" extended-state="0" />
@@ -590,20 +589,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/VideoTable/VideoTable.js">
+    <entry file="file://$PROJECT_DIR$/src/components/VideoSide/VideoSide.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="258" column="17" selection-start-line="258" selection-start-column="17" selection-end-line="258" selection-end-column="17" />
+        <state relative-caret-position="969">
+          <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/VideoSide/VideoSide.js">
+    <entry file="file://$PROJECT_DIR$/src/components/VideoTable/VideoTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+        <state relative-caret-position="353">
+          <caret line="151" column="25" selection-start-line="151" selection-start-column="25" selection-end-line="151" selection-end-column="25" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

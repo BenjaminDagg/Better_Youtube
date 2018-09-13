@@ -148,7 +148,8 @@ export class VideoTable extends Component {
             q: query,
             part: 'snippet',
             type: 'video',
-            field: '*'
+            field: '*',
+            maxResults: 50
         });
         request.execute(function(response) {
 
