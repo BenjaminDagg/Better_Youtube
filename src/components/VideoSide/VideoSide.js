@@ -18,6 +18,27 @@ export class VideoSide extends Component {
 
         this.close = this.close.bind(this);
         this.renderVideo = this.renderVideo.bind(this);
+        this.getVideo = this.getVideo.bind(this);
+    }
+
+
+    getVideo(id) {
+
+
+        //get the video object
+        for (var i = 0; i < this.props.videos.length;i++) {
+            if (this.props.videos[i].id == id) {
+                this.setState({video: this.props.videos[i]});
+                break;
+            }
+        }
+    }
+
+
+    componentDidMount() {
+        var id = this.props.selectedVideo;
+
+        this.getVideo(id);
     }
 
 
@@ -25,12 +46,7 @@ export class VideoSide extends Component {
         var id = nextProps.selectedVideo;
 
         //get the video object
-        for (var i = 0; i < nextProps.videos.length;i++) {
-            if (nextProps.videos[i].id == id) {
-                this.setState({video: nextProps.videos[i]});
-                break;
-            }
-        }
+        this.getVideo(id);
     }
 
     renderVideo() {
@@ -42,15 +58,7 @@ export class VideoSide extends Component {
 
         else {
 
-            var id = this.props.selectedVideo;
 
-            //get the video object
-            for (var i = 0; i < this.props.videos.length;i++) {
-                if (this.props.videos[i].id == id) {
-                    this.setState({video: this.props.videos[i]});
-                    break;
-                }
-            }
 
             var url = "https://www.youtube.com/embed/" + this.state.video.id;
             return (

@@ -206,6 +206,7 @@ export class VideoTable extends Component {
 
     //callback from VideoContainer that sets the id of the clicked video
     onVideoClicked(id) {
+        console.log(id);
         this.setState({videoPlaying: true});
         this.setState({selectedVideo: id});
     }
@@ -255,7 +256,7 @@ export class VideoTable extends Component {
                 <SearchInput onSearchChanged={this.onSearchChanged}/>
                 }
 
-                {this.state.videos.length != 0 && this.state.gapiLoaded && this.state.videoPlaying &&
+                {this.state.videoPlaying &&
 
                     <Route path={"/video/:id"} render={(props) => <VideoSide  {...props} style={videoStyle} onVideoPlayerClose={this.onVideoPlayerClose} videos={this.state.videos} selectedVideo={this.state.selectedVideo}/>} />
 
