@@ -52,7 +52,7 @@ export class ResultList extends Component {
 
                 return <VideoContainer  onClick={this.props.onVideoClicked} video={video} thumbnail={video.snippet.thumbnails.high.url}/>
             });
-
+            console.log(result);
             return result;
         }
     }

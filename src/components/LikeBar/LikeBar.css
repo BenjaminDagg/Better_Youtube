@@ -6,13 +6,11 @@
 
 .likediv {
     background-color: green;
-    position: absolute;
-    left: 0;
+    float:left
 }
 
 .dislikediv {
     background-color: red;
-    position: absolute;
-    right: 0;
+    float: right;
 
 }

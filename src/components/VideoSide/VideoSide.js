@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import {VideoContainer} from "../VideoContainer/VideoContainer";
 import { VideoPlayer } from "../VideoPlayer/VideoPlayer";
+import { VideoInfo } from "../VideoInfo/VideoInfo";
 import "./VideoSide.css";
 /*
 This component is the 'Job Board' logo on the top of
@@ -82,6 +83,9 @@ export class VideoSide extends Component {
             <div style={this.props.style} id="video-bar">
                 {this.state.video &&
                     <VideoPlayer  height={'400px'} width={'70%'} id={this.state.video.id}/>
+                }
+                {this.state.video &&
+                    <VideoInfo video={this.state.video}/>
                 }
                 <button onClick={this.close} id="video-close">X</button>
 

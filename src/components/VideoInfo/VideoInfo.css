@@ -1,0 +1,62 @@
+.video-info {
+    position: relative;
+    margin: 20px;
+    padding: 10px;
+}
+
+.video-info-title {
+    text-align: left;
+}
+
+.video-info-views {
+    position:absolute;
+    left: 0;
+    top: 60px;
+}
+
+.video-info-like-container {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+
+}
+
+#video-info-dislike {
+    position: absolute;
+    right: 0;
+}
+
+#video-info-like {
+    position: absolute;
+    left: 0;
+}
+
+#channel-container {
+    width: 90%;
+
+    position: absolute;
+    left: 0;
+    top: 150px;
+
+}
+
+#channel-container img {
+    height: 90px;
+    position:absolute;
+    left: 0;
+}
+
+#channel-container p {
+    text-align: left;
+}
+
+#channel-title {
+    position: absolute;
+    left: 100px;
+}
+
+.channel-stat {
+    position:absolute;
+    left: 100px;
+}

@@ -30,4 +30,5 @@
     right: 0;
     top: 250px;
     border: 1px solid lightgrey;
+    overflow-y: auto;
 }
