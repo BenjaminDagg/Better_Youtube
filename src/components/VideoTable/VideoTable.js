@@ -8,6 +8,8 @@ import axios from "axios";
 import { CookiesProvider, withCookies, Cookies } from 'react-cookie';
 import { VideoSide } from "../VideoSide/VideoSide";
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { FilterButtons } from "../FilterButtons/FilterButtons";
+import { FilterTypes } from "../../models/FilterTypes";
 
 /*
 This component is the container for the entire application
@@ -23,9 +25,11 @@ export class VideoTable extends Component {
           videos: [],
           searchHistory: [],
           selectedVideo: null,
-          videoPlaying: false
+          videoPlaying: false,
+          filter: FilterTypes.VIEW_COUNT
         };
 
+        this.onFilterChange = this.onFilterChange.bind(this);
         this.getVideos = this.getVideos.bind(this);
         this.onSearchChanged = this.onSearchChanged.bind(this);
         this.setCookie = this.setCookie.bind(this);
@@ -219,6 +223,45 @@ export class VideoTable extends Component {
     }
 
 
+    onFilterChange(filter) {
+        var videos = this.state.videos;
+
+        var newVideos = [];
+        switch(filter) {
+            //sort by view count
+            case FilterTypes.VIEW_COUNT:
+                newVideos = videos.sort(function(a,b) {
+                    console.log(a);
+                    var aViewCount = parseInt(a.statistics.viewCount);
+                    var bViewCount = parseInt(b.statistics.viewCount);
+                    return (aViewCount < bViewCount) ? 1 :((bViewCount < aViewCount) ? -1 : 0);
+                });
+                break;
+            //sort by rating
+            case FilterTypes.RATING:
+                newVideos = videos.sort(function(a,b) {
+                    var totA = a.statistics.likeCount + a.statistics.dislikeCount;
+                    var aRatio = (a.statistics.likeCount / totA) * 100;
+                    var totB = b.statistics.likeCount + b.statistics.dislikeCount;
+                    var bRatio = (b.statistics.likeCount / totB) * 100;
+                    return (aRatio < bRatio) ? 1 :((bRatio < aRatio) ? -1 : 0);
+                });
+                break;
+            //sort by date
+            default:
+                newVideos = videos.sort(function(a,b) {
+                    var aDate = new Date(a.snippet.publishedAt);
+                    var bDate = new Date(b.snippet.publishedAt);
+                    return bDate.getUTCDate() - aDate.getUTCDate();
+                });
+
+        }
+
+
+        this.setState({videos: newVideos});
+    }
+
+
     render() {
 
 
@@ -255,6 +298,9 @@ export class VideoTable extends Component {
                 }
                 {this.state.gapiLoaded &&
                 <SearchInput onSearchChanged={this.onSearchChanged}/>
+                }
+                {this.state.gapiLoaded &&
+                    <FilterButtons onFilterChange={this.onFilterChange}/>
                 }
 
                 {this.state.videoPlaying &&

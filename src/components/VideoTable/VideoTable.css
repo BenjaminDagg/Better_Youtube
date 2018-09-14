@@ -13,8 +13,9 @@
     height: 80%;
     position: absolute;
     left: 0;
-    top: 150px;
+    top: 250px;
     border: 1px solid lightgrey;
+    overflow-y: auto;
 
     display: grid;
     grid-template-columns: repeat(auto-fill, 260px);
@@ -27,6 +28,6 @@
     height: 80%;
     position: absolute;
     right: 0;
-    top: 150px;
+    top: 250px;
     border: 1px solid lightgrey;
 }

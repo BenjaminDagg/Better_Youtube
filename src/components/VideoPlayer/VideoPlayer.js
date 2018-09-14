@@ -17,7 +17,7 @@ export class VideoPlayer extends Component {
 
         return (
             <div class="video-player" style={style}>
-                <iframe src={baseUrl + this.props.id} className="player" id={this.props.id} type="text/html" width="100%" height="100%"/>
+                <iframe src={baseUrl + this.props.id +"?autoplay=1"} className="player" id={this.props.id} type="text/html" width="100%" height="100%"/>
             </div>
         );
     }

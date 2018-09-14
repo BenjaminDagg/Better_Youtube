@@ -21,32 +21,12 @@ export class VideoContainer extends Component {
 
         this.parseNumbers = this.parseNumbers.bind(this);
         this.onClick = this.onClick.bind(this);
-
+        this.getDate = this.getDate.bind(this);
     }
 
 
 
-    drawVideo() {
-        if (!this.state.video || !this.props.video) {
-            return (<div>Loading...</div>)
-        }
-        else {
-            return (
-                <a >
-                    <img src={this.props.thumbnail} />
-                    <p>
-                        <strong>
-                            {this.props.video.snippet.title}
-                        </strong>
-                        <br />
-                        <span>{this.props.video.snippet.channelTitle}</span>
-                        <br/>
 
-                    </p>
-                </a>
-            );
-        }
-    }
 
 
     //converts a string of numbers into an easier
@@ -86,6 +66,31 @@ export class VideoContainer extends Component {
     }
 
 
+    getDate(iso) {
+        var date = iso.substring(5,7) + "/" + iso.substring(8,10) + "/" + iso.substring(0,4);
+
+        var hourInt = parseInt(iso.substring(11,13));
+        if (hourInt > 12) {
+            hourInt = 24 - hourInt;
+        }
+        if (hourInt < 1) {
+            hourInt = 12;
+        }
+
+
+
+        var minInt = parseInt(iso.substring(14,16));
+        if (minInt < 10) {
+            minInt = "0" + minInt;
+        }
+
+        var tod = hourInt < 12 ? 'AM' : 'PM';
+
+        date += " " + hourInt + ":" + minInt + " " + tod;
+
+        return date;
+    }
+
 
     //<iframe src={this.props.url} className="player" id={this.props.video.id.videoId} type="text/html" width="200" height="200"/>
 
@@ -103,6 +108,8 @@ export class VideoContainer extends Component {
                         <br/>
                         <span>{this.parseNumbers(this.props.video.statistics.viewCount) + " views"}</span>
                         <br/>
+                        <span> Published {this.getDate(this.props.video.snippet.publishedAt)}</span>
+                        <br />
                         <span class="likes">	&#x1f44d; {this.parseNumbers(this.props.video.statistics.likeCount)} </span>
                         <span
                             className="likes">	&#x1f44e; {this.parseNumbers(this.props.video.statistics.dislikeCount)} </span>
