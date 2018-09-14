@@ -61,7 +61,7 @@ export class VideoContainer extends Component {
 
 
     onClick() {
-        console.log("clicked");
+
         this.props.onClick(this.props.video.id);
     }
 
@@ -95,6 +95,7 @@ export class VideoContainer extends Component {
     //<iframe src={this.props.url} className="player" id={this.props.video.id.videoId} type="text/html" width="200" height="200"/>
 
     render() {
+
         return (
             <div class="video-container">
                 <Link to={"/video/" + this.props.video.id} onClick={this.onClick} >
@@ -114,8 +115,8 @@ export class VideoContainer extends Component {
                         <span
                             className="likes">	&#x1f44e; {this.parseNumbers(this.props.video.statistics.dislikeCount)} </span>
                         <br/>
-                        <div style={{'height': '10px', "width" : '50%'}}>
-                            <LikeBar likes={this.props.video.statistics.likeCount} dislikes={this.parseNumbers(this.props.video.statistics.dislikeCount)}/>
+                        <div style={{'height': '10px', "width" : '125px'}}>
+                            <LikeBar likes={this.props.video.statistics.likeCount} dislikes={this.props.video.statistics.dislikeCount}/>
                         </div>
                     </p>
                 </Link>

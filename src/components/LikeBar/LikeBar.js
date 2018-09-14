@@ -22,7 +22,7 @@ export class LikeBar extends Component {
             'height': '100%'
 
         };
-        console.log(likeBarStyle);
+
         var dislikeBarStyle = {
             'width' : parseInt((dislikes / total) * 100).toString() + "%",
             'height': '100%'
