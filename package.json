@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.0.3",
     "axios": "^0.18.0",
     "google-auth-library": "^2.0.0",
     "googleapis": "^33.0.0",

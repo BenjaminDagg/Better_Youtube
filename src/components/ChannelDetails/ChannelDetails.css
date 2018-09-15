@@ -1,0 +1,66 @@
+#channel-page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 125px;
+    padding: 20px;
+
+}
+
+#channel-header {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px;
+}
+
+#channel-img {
+    height: 125px;
+    width: 125px;
+    position: absolute;
+    left: 50px;
+    margin: 10px;
+}
+
+.channel-info {
+    position: absolute;
+    left: 210px;
+    top: 70px;
+}
+
+#channel-nav {
+    position: absolute;
+    bottom: 20px;
+    margin: 0 auto;
+    left: 210px;
+    width: 500px;
+    background-color:white;
+    color: black;
+}
+
+#channel-nav a {
+    margin: 30px;
+    color: darkgrey;
+}
+
+#channel-nav a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+#channel-content {
+    width: 100%;
+    height: 800px;
+    position:absolute;
+
+    left: 0;
+    top: 200px;
+}
+
+#channel-page {
+    width: 100%;
+    height: 100%;
+}

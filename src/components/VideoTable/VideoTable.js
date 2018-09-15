@@ -22,7 +22,7 @@ export class VideoTable extends Component {
         this.state = {
           gapiLoaded: false,
           searchText: "",
-          videos: [],
+          videos: this.props.videos ? this.props.videos : [],
           searchHistory: [],
           selectedVideo: null,
           videoPlaying: false,
@@ -249,12 +249,18 @@ export class VideoTable extends Component {
                 break;
             //sort by date
             default:
+                /*
                 newVideos = videos.sort(function(a,b) {
                     var aDate = new Date(a.snippet.publishedAt);
                     var bDate = new Date(b.snippet.publishedAt);
                     return bDate.getUTCDate() - aDate.getUTCDate();
                 });
-
+                */
+                newVideos = videos.sort(function(a,b) {
+                    var aDate = new Date(a.snippet.publishedAt);
+                    var bDate = new Date(b.snippet.publishedAt);
+                    return (a.snippet.publishedAt > b.snippet.publishedAt) ? -1 : ((a.snippet.publishedAt < b.snippet.publishedAt) ? 1 : 0);
+                });
         }
 
 

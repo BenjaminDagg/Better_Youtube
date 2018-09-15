@@ -92,6 +92,10 @@ export class VideoContainer extends Component {
     }
 
 
+
+
+
+
     //<iframe src={this.props.url} className="player" id={this.props.video.id.videoId} type="text/html" width="200" height="200"/>
 
     render() {
@@ -105,9 +109,14 @@ export class VideoContainer extends Component {
                             {this.props.video.snippet.title}
                         </strong>
                         <br />
-                        <span>{this.props.video.snippet.channelTitle}</span>
+                    </p>
+                        </Link>
+
+                <a href={'/channel/' + this.props.video.snippet.channelId}><span class="channel-link">{this.props.video.snippet.channelTitle}</span></a>
+                <Link to={"/video/" + this.props.video.id} onClick={this.onClick} >
+                    <p>
                         <br/>
-                        <span>{this.parseNumbers(this.props.video.statistics.viewCount) + " views"}</span>
+                        <span >{this.parseNumbers(this.props.video.statistics.viewCount) + " views"}</span>
                         <br/>
                         <span> Published {this.getDate(this.props.video.snippet.publishedAt)}</span>
                         <br />
@@ -120,6 +129,7 @@ export class VideoContainer extends Component {
                         </div>
                     </p>
                 </Link>
+
             </div>
         );
     }

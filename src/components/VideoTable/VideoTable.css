@@ -9,7 +9,7 @@
 }
 
 #result-bar {
-    width: 50%;
+    width: 40%;
     height: 80%;
     position: absolute;
     left: 0;
@@ -24,11 +24,18 @@
 }
 
 #video-bar {
-    width: 50%;
+    width: 60%;
     height: 80%;
     position: absolute;
     right: 0;
     top: 250px;
     border: 1px solid lightgrey;
     overflow-y: auto;
+}
+
+#job-board {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
 }

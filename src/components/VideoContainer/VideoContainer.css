@@ -30,3 +30,13 @@
 .video-container a {
     text-decoration: none;
 }
+
+.channel-link {
+    position: absolute;
+    left: 0;
+}
+
+.channel-link:hover {
+    color: dodgerblue;
+    cursor: pointer;
+}

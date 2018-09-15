@@ -15,12 +15,15 @@ export class VideoInfo extends Component {
         super(props);
 
         this.state = {
-            channel: null
+            channel: null,
+            showDescription: false,
+            descBtnText: "Show More " + '\u25BC'
         };
 
         this.parseNumbers = this.parseNumbers.bind(this);
         this.getChannelInfo = this.getChannelInfo.bind(this);
         this.getDate = this.getDate.bind(this);
+        this.toggleDescription = this.toggleDescription.bind(this);
     }
 
 
@@ -104,6 +107,29 @@ export class VideoInfo extends Component {
     }
 
 
+    toggleDescription() {
+        console.log(this.state.channel);
+        var dwnArrow = '\u25BC';
+        var upArrow = 	'\u25B2';
+        var descriptionBtn = document.getElementById('description-btn');
+        var description = document.getElementById('desc');
+
+        if (this.state.showDescription == true) {
+            description.style.display = 'none';
+            descriptionBtn.text = "Show More " + dwnArrow;
+            this.setState({showDescription: false});
+            this.setState({descBtnText: "Show More " + dwnArrow })
+        }
+        else {
+            console.log('in');
+            description.style.display = 'block';
+            descriptionBtn.text = "Show Less " + upArrow;
+            this.setState({showDescription: true});
+            this.setState({descBtnText: "Show Less " + upArrow })
+        }
+    }
+
+
 
     render() {
         return (
@@ -132,7 +158,9 @@ export class VideoInfo extends Component {
                         <img src={this.state.channel.items[0].snippet.thumbnails.default.url} />
                     }
                     {this.state.channel &&
-                        <strong id="channel-title">{this.state.channel.items[0].snippet.title}</strong>
+
+
+                    <a href={"/channel/" + this.state.channel.items[0].id}><strong  class="channel-link" id="channel-title">{this.state.channel.items[0].snippet.title}</strong></a>
 
                     }
                     <br />
@@ -148,7 +176,11 @@ export class VideoInfo extends Component {
                     <br />
                     <br />
                     {this.state.channel &&
-                        <p class="channel-stat">{this.props.video.snippet.description}</p>
+                        <button type="button" onClick={this.toggleDescription} id="description-btn" class="description-btn">{this.state.descBtnText}</button>
+                    }
+
+                    {this.state.channel &&
+                        <p id="desc" class="channel-stat">{this.props.video.snippet.description}</p>
 
                     }
 

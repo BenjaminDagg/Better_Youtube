@@ -60,3 +60,12 @@
     position:absolute;
     left: 100px;
 }
+
+.description-btn {
+    background-color:white;
+    border: 1px solid white;
+}
+
+#desc {
+    display: none;
+}
