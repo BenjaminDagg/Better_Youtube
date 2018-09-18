@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6d50e670-54b5-49b7-bd29-17b5baa1d98c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoContainer/VideoContainer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoContainer/VideoContainer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoContainer/VideoContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoContainer/VideoContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoInfo/VideoInfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoInfo/VideoInfo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoInfo/VideoInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoInfo/VideoInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/VideoTable/VideoTable.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoTable/VideoTable.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/VideoTable/VideoTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoTable/VideoTable.js" afterDir="false" />
     </list>
@@ -38,14 +31,15 @@
     <session id="-31915804">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.40" value="2" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -66,14 +60,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="6411" />
+          <entry key="css" value="6439" />
           <entry key="html" value="49" />
           <entry key="js" value="27771" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="6411" />
+          <entry key="CSS" value="6439" />
           <entry key="HTML" value="49" />
           <entry key="JavaScript" value="27771" />
         </counts>
@@ -85,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/VideoTable/VideoTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="261" column="107" selection-start-line="261" selection-start-column="107" selection-end-line="261" selection-end-column="107" />
+            <state relative-caret-position="-581">
+              <caret line="251" selection-start-line="251" selection-end-line="251" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -97,7 +91,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ChannelHome/ChannelHome.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="816">
               <caret line="53" column="43" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="43" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -109,7 +103,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/VideoSide/VideoSide.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="1343">
               <caret line="84" column="20" selection-start-line="84" selection-start-column="20" selection-end-line="84" selection-end-column="91" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -121,7 +115,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/VideoContainer/VideoContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="1853">
               <caret line="114" column="101" selection-start-line="114" selection-start-column="80" selection-end-line="114" selection-end-column="101" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -139,11 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/VideoInfo/VideoInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="162" column="105" selection-start-line="162" selection-start-column="105" selection-end-line="162" selection-end-column="105" />
+            <state relative-caret-position="426">
+              <caret line="157" column="73" selection-start-line="157" selection-start-column="73" selection-end-line="157" selection-end-column="73" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -154,7 +148,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ChannelDetails/ChannelDetails.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="649">
+            <state relative-caret-position="3332">
               <caret line="210" column="71" selection-start-line="210" selection-start-column="71" selection-end-line="210" selection-end-column="71" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -163,11 +157,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/VideoTable/VideoTable.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            <state relative-caret-position="408">
+              <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -175,7 +169,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ChannelDetails/ChannelDetails.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="935">
               <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
             </state>
           </provider>
@@ -184,7 +178,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/VideoContainer/VideoContainer.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
+            <state relative-caret-position="680">
               <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
             </state>
           </provider>
@@ -242,11 +236,11 @@
         <option value="$PROJECT_DIR$/src/components/ChannelHome/ChannelHome.js" />
         <option value="$PROJECT_DIR$/src/components/ChannelDetails/ChannelDetails.js" />
         <option value="$PROJECT_DIR$/src/components/ChannelDetails/ChannelDetails.css" />
-        <option value="$PROJECT_DIR$/src/components/VideoTable/VideoTable.js" />
-        <option value="$PROJECT_DIR$/src/components/VideoTable/VideoTable.css" />
         <option value="$PROJECT_DIR$/src/components/ChannelHome/ChannelHome.css" />
         <option value="$PROJECT_DIR$/src/components/VideoContainer/VideoContainer.css" />
         <option value="$PROJECT_DIR$/src/components/VideoInfo/VideoInfo.js" />
+        <option value="$PROJECT_DIR$/src/components/VideoTable/VideoTable.js" />
+        <option value="$PROJECT_DIR$/src/components/VideoTable/VideoTable.css" />
       </list>
     </option>
   </component>
@@ -284,7 +278,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -402,13 +395,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536971958252" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536973734208" />
     <property name="last_opened_file_path" value="C:/Program Files/nodejs/node_modules/npm/node_modules/create-react-app" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
@@ -448,18 +442,20 @@
       <workItem from="1536476409792" duration="14243000" />
       <workItem from="1536551840499" duration="11000" />
       <workItem from="1536881222311" duration="10122000" />
-      <workItem from="1536948317484" duration="23566000" />
+      <workItem from="1536948317484" duration="24218000" />
+      <workItem from="1537094263431" duration="486000" />
+      <workItem from="1537237472308" duration="235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81750000" />
+    <option name="totallyTimeSpent" value="83123000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498366" visible="true" weight="0.22210066" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498366" visible="true" weight="0.4190372" />
       <window_info id="Structure" order="1" sideWeight="0.501634" side_tool="true" weight="0.269188" />
       <window_info id="npm" order="2" sideWeight="0.501634" side_tool="true" weight="0.269188" />
       <window_info id="Image Layers" order="3" />
@@ -580,9 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -611,9 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -621,9 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="717">
           <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -631,9 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="52" column="137" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="137" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -641,9 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="18" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -661,9 +642,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ChannelHome/ChannelHome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="53" column="43" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoSide/VideoSide.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="1343">
           <caret line="84" column="20" selection-start-line="84" selection-start-column="20" selection-end-line="84" selection-end-column="91" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -671,37 +662,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ChannelDetails/ChannelDetails.js">
+    <entry file="file://$PROJECT_DIR$/src/components/VideoContainer/VideoContainer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="210" column="71" selection-start-line="210" selection-start-column="71" selection-end-line="210" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/VideoTable/VideoTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="261" column="107" selection-start-line="261" selection-start-column="107" selection-end-line="261" selection-end-column="107" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/VideoTable/VideoTable.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ChannelHome/ChannelHome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="53" column="43" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="43" />
+        <state relative-caret-position="1853">
+          <caret line="114" column="101" selection-start-line="114" selection-start-column="80" selection-end-line="114" selection-end-column="101" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -715,37 +679,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ChannelDetails/ChannelDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3332">
+          <caret line="210" column="71" selection-start-line="210" selection-start-column="71" selection-end-line="210" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ChannelDetails/ChannelDetails.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="935">
           <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoContainer/VideoContainer.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state relative-caret-position="680">
           <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/VideoContainer/VideoContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="114" column="101" selection-start-line="114" selection-start-column="80" selection-end-line="114" selection-end-column="101" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoInfo/VideoInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="162" column="105" selection-start-line="162" selection-start-column="105" selection-end-line="162" selection-end-column="105" />
+        <state relative-caret-position="426">
+          <caret line="157" column="73" selection-start-line="157" selection-start-column="73" selection-end-line="157" selection-end-column="73" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/VideoTable/VideoTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-581">
+          <caret line="251" selection-start-line="251" selection-end-line="251" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/VideoTable/VideoTable.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
         </state>
       </provider>
     </entry>

@@ -249,13 +249,7 @@ export class VideoTable extends Component {
                 break;
             //sort by date
             default:
-                /*
-                newVideos = videos.sort(function(a,b) {
-                    var aDate = new Date(a.snippet.publishedAt);
-                    var bDate = new Date(b.snippet.publishedAt);
-                    return bDate.getUTCDate() - aDate.getUTCDate();
-                });
-                */
+
                 newVideos = videos.sort(function(a,b) {
                     var aDate = new Date(a.snippet.publishedAt);
                     var bDate = new Date(b.snippet.publishedAt);
