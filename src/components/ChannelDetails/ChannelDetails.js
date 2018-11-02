@@ -115,7 +115,9 @@ export class ChannelDetails extends Component {
                             //response
                             var newItem = video.data.items[0];
                             videos.push(newItem);
-                            self.setState({channelVideos: videos});
+                            self.setState({channelVideos: videos},() => {
+                                this.sortVideosByDate();
+                            });
 
                         });
 
@@ -158,11 +160,12 @@ export class ChannelDetails extends Component {
             return;
         }
 
+
         var videos = this.state.channelVideos;
         var sortedVideos = videos.sort(function(a,b) {
             var aDate = new Date(a.snippet.publishedAt);
             var bDate = new Date(b.snippet.publishedAt);
-            return bDate.getUTCDate() - aDate.getUTCDate();
+            return (a.snippet.publishedAt > b.snippet.publishedAt) ? -1 : ((a.snippet.publishedAt < b.snippet.publishedAt) ? 1 : 0);
         });
 
         this.setState({channelVideos: sortedVideos});

@@ -251,10 +251,10 @@ export class VideoTable extends Component {
             default:
 
                 newVideos = videos.sort(function(a,b) {
-                    var aDate = new Date(a.snippet.publishedAt);
-                    var bDate = new Date(b.snippet.publishedAt);
-                    return (a.snippet.publishedAt > b.snippet.publishedAt) ? -1 : ((a.snippet.publishedAt < b.snippet.publishedAt) ? 1 : 0);
-                });
+                var aDate = new Date(a.snippet.publishedAt);
+                var bDate = new Date(b.snippet.publishedAt);
+                return (a.snippet.publishedAt > b.snippet.publishedAt) ? -1 : ((a.snippet.publishedAt < b.snippet.publishedAt) ? 1 : 0);
+            });
         }
 
 
