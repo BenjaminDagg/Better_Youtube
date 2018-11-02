@@ -203,7 +203,6 @@ export class ChannelDetails extends Component {
                         <Tabs value={this.state.navIndex} onChange={this.handleTabChange}>
                             <Tab label="Home"/>
                             <Tab label="Videos"/>
-                            <Tab label="About" />
                         </Tabs>
                     </AppBar>
                     <div id="channel-content">
@@ -213,9 +212,7 @@ export class ChannelDetails extends Component {
                         {this.state.navIndex == 1 && this.state.channelVideos.length > 0 &&
                            <VideoTable videos={this.state.channelVideos}/>
                         }
-                        {this.state.navIndex == 2 &&
-                        <span>About</span>
-                        }
+
                     </div>
                 </div>
 
