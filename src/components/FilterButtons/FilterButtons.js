@@ -52,7 +52,8 @@ export class FilterButtons extends Component {
             <div id="filters">
                 <button id="sort-btn" onClick={this.toggleFilters}>Sort By</button>
                 <div id="sort-dropdown" className="dropdown">
-                    <button value={FilterTypes.DATE} onClick={this.onFilterClick}>Date</button>
+                    <button value={FilterTypes.DATE} onClick={this.onFilterClick}>Date(newest)</button>
+                    <button value={FilterTypes.DATE_OLDEST} onClick={this.onFilterClick}>Date(oldest)</button>
                     <button value={FilterTypes.VIEW_COUNT} onClick={this.onFilterClick}>Views</button>
                     <button value={FilterTypes.RATING} onClick={this.onFilterClick}>Rating</button>
 
