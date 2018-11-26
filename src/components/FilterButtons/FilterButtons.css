@@ -1,9 +1,9 @@
 #filters {
     position: relative;
-    top: 120px;
+    top: 50px;
     margin: 0 auto;
     height: 150px;
-    width: 50%;
+    width: 150px;
 
     float: left;
 }

@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import axios from "axios";
 import {config} from "../../models/config";
@@ -51,23 +52,24 @@ export class ChannelHome extends Component {
 
     render() {
         return (
-            <div id="channel-home-container">
-                <h3 id="latest-vid-header">Latest Video</h3>
-                <div id="home-video">
-                    {this.props.latestVideo &&
-                        <div id="video">
-                            <VideoPlayer style={{'float' : 'left', 'position': 'relative'}}  height={'400px'} width={'100%'} id={this.props.latestVideo.id}/>
-                        </div>
-                    }
-                    {this.props.latestVideo &&
-                        <div id="videoinfo">
-                            <VideoInfo video={this.props.latestVideo}/>
-                        </div>
-                    }
-
-
+            <div  class="container-fluid">
+                <div class="row justify-content-md-center">
+                    <div class="col-12 col-md-6" style={{'max-width':'80%'}}>
+                        <h3>Latest Video</h3>
+                        {this.props.latestVideo &&
+                            <div id="video">
+                                <VideoPlayer   height={'400px'} width={'400px'} id={this.props.latestVideo.id}/>
+                            </div>
+                        }
+                    </div>
+                    <div style={{'margin-top': '50px', 'max-width':'80%'}} class="col-12 col-md-6">
+                        {this.props.latestVideo &&
+                            <div id="videoinfo">
+                                <VideoInfo video={this.props.latestVideo}/>
+                            </div>
+                        }
+                    </div>
                 </div>
-
             </div>
         );
     }
