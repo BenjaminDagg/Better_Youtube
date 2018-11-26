@@ -61,7 +61,7 @@ export class VideoInfo extends Component {
         axios.get(baseUrl + id +
             '&key=' + config.apiKey + '&part=snippet,contentDetails,statistics,status')
             .then(response => {
-                console.log(response);
+
                 this.setState({channel: response.data});
 
             });
@@ -108,7 +108,7 @@ export class VideoInfo extends Component {
 
 
     toggleDescription() {
-        console.log(this.state.channel);
+
         var dwnArrow = '\u25BC';
         var upArrow = 	'\u25B2';
         var descriptionBtn = document.getElementById('description-btn');
@@ -121,7 +121,7 @@ export class VideoInfo extends Component {
             this.setState({descBtnText: "Show More " + dwnArrow })
         }
         else {
-            console.log('in');
+
             description.style.display = 'block';
             descriptionBtn.text = "Show Less " + upArrow;
             this.setState({showDescription: true});

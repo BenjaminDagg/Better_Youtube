@@ -76,7 +76,7 @@ export class VideoTable extends Component {
         var history = this.getCookie("searches");
         //cookie alkready exists
         if (history != "") {
-            console.log(history);
+
             history = JSON.parse(history);
             this.setState({searchHistory: history});
             var randomIndex = Math.floor(Math.random() * Math.floor(history.length));
@@ -138,7 +138,7 @@ export class VideoTable extends Component {
 
     getVideos() {
 
-        console.log("search text: " + this.state.searchText);
+
 
         //delete all videos
         this.setState({videos: []});
@@ -211,7 +211,7 @@ export class VideoTable extends Component {
 
     //callback from VideoContainer that sets the id of the clicked video
     onVideoClicked(id) {
-        console.log(id);
+
         this.setState({videoPlaying: true});
         this.setState({selectedVideo: id});
     }
@@ -231,7 +231,7 @@ export class VideoTable extends Component {
             //sort by view count
             case FilterTypes.VIEW_COUNT:
                 newVideos = videos.sort(function(a,b) {
-                    console.log(a);
+
                     var aViewCount = parseInt(a.statistics.viewCount);
                     var bViewCount = parseInt(b.statistics.viewCount);
                     return (aViewCount < bViewCount) ? 1 :((bViewCount < aViewCount) ? -1 : 0);

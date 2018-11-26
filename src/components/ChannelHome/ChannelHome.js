@@ -31,7 +31,7 @@ export class ChannelHome extends Component {
         }
 
         var baseUrl = "https://www.googleapis.com/youtube/v3/playlistItems?";
-        console.log("url = " + baseUrl);
+
         axios.get(baseUrl +
             "part=snippet" +
             "&maxResults=50" +

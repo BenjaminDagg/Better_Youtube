@@ -60,7 +60,7 @@ export class ChannelDetails extends Component {
 
     componentDidMount() {
         var id = this.props.match.params.id;
-        console.log('id = ' + id);
+
         this.getChannelInfo(id);
 
         var self = this;
@@ -84,7 +84,7 @@ export class ChannelDetails extends Component {
         axios.get(baseUrl + id +
             '&key=' + config.apiKey + '&part=snippet,contentDetails,statistics,status')
             .then(response => {
-                console.log(response);
+
                 self.setState({channel: response.data.items[0]});
 
             });

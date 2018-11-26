@@ -27,7 +27,7 @@ export class ResultList extends Component {
 
 
         this.props.videos.sort(function(a,b) {
-            console.log(a);
+
             return (a.statistics.viewCount < b.statistics.viewCount) ? 1 :((b.statistics.viewCount < a.statistics.viewCount) ? -1 : 0);
         });
 
@@ -52,7 +52,7 @@ export class ResultList extends Component {
 
                 return <VideoContainer  onClick={this.props.onVideoClicked} video={video} thumbnail={video.snippet.thumbnails.high.url}/>
             });
-            console.log(result);
+
             return result;
         }
     }
