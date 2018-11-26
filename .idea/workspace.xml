@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d50e670-54b5-49b7-bd29-17b5baa1d98c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/ChannelDetails/ChannelDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChannelDetails/ChannelDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ChannelHome/ChannelHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChannelHome/ChannelHome.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ResultBar/ResultList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResultBar/ResultList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoInfo/VideoInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoInfo/VideoInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoTable/VideoTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoTable/VideoTable.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,7 +64,7 @@
         <counts>
           <entry key="css" value="6441" />
           <entry key="html" value="63" />
-          <entry key="js" value="28110" />
+          <entry key="js" value="28687" />
           <entry key="json" value="16" />
           <entry key="md" value="508" />
         </counts>
@@ -78,7 +74,7 @@
           <entry key="CSS" value="6441" />
           <entry key="HTML" value="63" />
           <entry key="JSON" value="16" />
-          <entry key="JavaScript" value="28110" />
+          <entry key="JavaScript" value="28687" />
           <entry key="Markdown" value="508" />
         </counts>
       </usages-collector>
@@ -144,16 +140,16 @@
         <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/ResultBar/ResultList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="255">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
             </state>
           </provider>
         </entry>
@@ -170,11 +166,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/VideoTable/VideoTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="233" column="20" selection-start-line="233" selection-start-column="20" selection-end-line="233" selection-end-column="20" />
+            <state relative-caret-position="-895">
+              <caret line="233" selection-start-line="233" selection-end-line="233" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -241,9 +237,9 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/src/components/ChannelHome/ChannelHome.js" />
         <option value="$PROJECT_DIR$/src/components/ChannelDetails/ChannelDetails.js" />
-        <option value="$PROJECT_DIR$/src/components/ResultBar/ResultList.js" />
         <option value="$PROJECT_DIR$/src/components/VideoInfo/VideoInfo.js" />
         <option value="$PROJECT_DIR$/src/components/VideoTable/VideoTable.js" />
+        <option value="$PROJECT_DIR$/src/components/ResultBar/ResultList.js" />
       </list>
     </option>
   </component>
@@ -451,18 +447,18 @@
       <workItem from="1540693095618" duration="1511000" />
       <workItem from="1541126873792" duration="1746000" />
       <workItem from="1541467880813" duration="48000" />
-      <workItem from="1543194204466" duration="1648000" />
+      <workItem from="1543194204466" duration="4795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88324000" />
+    <option name="totallyTimeSpent" value="91471000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="938" y="0" width="989" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498366" visible="true" weight="0.26372445" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498366" visible="true" weight="0.26372445" />
       <window_info id="Structure" order="1" sideWeight="0.501634" side_tool="true" weight="0.269188" />
       <window_info id="npm" order="2" sideWeight="0.501634" side_tool="true" weight="0.269188" />
       <window_info id="Image Layers" order="3" />
@@ -479,7 +475,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33296824" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33296824" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.32968238" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -700,14 +696,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ResultBar/ResultList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -751,11 +740,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoTable/VideoTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="233" column="20" selection-start-line="233" selection-start-column="20" selection-end-line="233" selection-end-column="20" />
+        <state relative-caret-position="-895">
+          <caret line="233" selection-start-line="233" selection-end-line="233" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ResultBar/ResultList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
         </state>
       </provider>
     </entry>

@@ -46,14 +46,13 @@ export class ResultList extends Component {
         else {
 
 
+            var videos = [];
+            for (var i = 0; i < this.props.videos.length - 1;i++) {
 
-            var result = this.props.videos.map((video) => {
+                videos.push(<VideoContainer key={i} onClick={this.props.onVideoClicked} video={this.props.videos[i]} thumbnail={this.props.videos[i].snippet.thumbnails.high.url}/>)
+            }
+            return videos;
 
-
-                return <VideoContainer  onClick={this.props.onVideoClicked} video={video} thumbnail={video.snippet.thumbnails.high.url}/>
-            });
-
-            return result;
         }
     }
 
