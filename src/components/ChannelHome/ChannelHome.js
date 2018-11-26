@@ -54,12 +54,17 @@ export class ChannelHome extends Component {
             <div id="channel-home-container">
                 <h3 id="latest-vid-header">Latest Video</h3>
                 <div id="home-video">
-                    <div id="video">
-                        <VideoPlayer style={{'float' : 'left', 'position': 'relative'}}  height={'400px'} width={'100%'} id={this.props.latestVideo.id}/>
-                    </div>
-                    <div id="videoinfo">
-                        <VideoInfo video={this.props.latestVideo}/>
-                    </div>
+                    {this.props.latestVideo &&
+                        <div id="video">
+                            <VideoPlayer style={{'float' : 'left', 'position': 'relative'}}  height={'400px'} width={'100%'} id={this.props.latestVideo.id}/>
+                        </div>
+                    }
+                    {this.props.latestVideo &&
+                        <div id="videoinfo">
+                            <VideoInfo video={this.props.latestVideo}/>
+                        </div>
+                    }
+
 
                 </div>
 

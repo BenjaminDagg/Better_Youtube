@@ -60,7 +60,7 @@ export class ChannelDetails extends Component {
 
     componentDidMount() {
         var id = this.props.match.params.id;
-
+        console.log('id = ' + id);
         this.getChannelInfo(id);
 
         var self = this;

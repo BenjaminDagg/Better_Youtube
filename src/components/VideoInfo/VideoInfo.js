@@ -134,6 +134,7 @@ export class VideoInfo extends Component {
     render() {
         return (
             <div class="video-info">
+
                 <strong class="video-info-title">
                     {this.props.video.snippet.title}
                 </strong>
@@ -141,8 +142,7 @@ export class VideoInfo extends Component {
                 <br />
                 <span class="video-info-views">{this.parseNumbers(this.props.video.statistics.viewCount) + " views"}</span>
                 <div class="video-info-like-container">
-                    <span id="video-info-like"
-                       >	&#x1f44d; {this.parseNumbers(this.props.video.statistics.likeCount)} </span>
+                    <span id="video-info-like">	&#x1f44d; {this.parseNumbers(this.props.video.statistics.likeCount)} </span>
                     <span id="video-info-dislike"
                         >	&#x1f44e; {this.parseNumbers(this.props.video.statistics.dislikeCount)} </span>
                     <br />
@@ -153,7 +153,7 @@ export class VideoInfo extends Component {
 
                 </div>
 
-                <div id="channel-container" >
+                <div id="channel-container">
                     {this.state.channel &&
                         <img src={this.state.channel.items[0].snippet.thumbnails.default.url} />
                     }
