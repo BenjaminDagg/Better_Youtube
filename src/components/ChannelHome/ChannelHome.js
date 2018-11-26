@@ -5,7 +5,7 @@ import {config} from "../../models/config";
 import "./ChannelHome.css";
 import {VideoPlayer} from "../VideoPlayer/VideoPlayer";
 import {VideoInfo} from "../VideoInfo/VideoInfo";
-
+import "../../bootstrap.css";
 
 /*
 This component is the 'Job Board' logo on the top of
